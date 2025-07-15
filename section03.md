@@ -48,7 +48,7 @@ These tiles use the **Web Mercator projection** (EPSG:3857), the same projection
 1. Give it the `Layer name`: Snow Map.
 
    ![](images/20250715_121547_image.png)
-7. Click **“OK”**
+2. Click **“OK”**
 
 **Note:** geojson.io only allows you to *replace* the default basemap, not layer a custom tile map on top of it. This means you’ll lose the street basemap while viewing the Snow map tiles.
 
@@ -65,7 +65,6 @@ Because the tile layer *replaces* the basemap, it may initially appear as though
 
 ![](images/20250715_121749_image.png)
 
-
 ![](images/20250715_121912_image.png)
 
 * Once you find it, you’ll see the historical map “floating” without a modern reference underneath, when you toggle to your Snow Map.
@@ -77,3 +76,10 @@ While this isn’t ideal for aligning features visually, we’ll use what we can
 ---
 
 In the next section, we’ll begin **digitizing the pump points**, labeling each with its nearest street name using the “label” property we practiced earlier.
+
+
+* [Introduction](https://github.com/mapninja/Pixels2Points/blob/main/readme.md)
+* [Section 02 - Introducing geojson.io](https://github.com/mapninja/Pixels2Points/blob/main/section02.md)
+* [Section 03 - Using XYZ Tiles in geojson.io](https://github.com/mapninja/Pixels2Points/blob/main/section03.md)
+* [Section 04 - Digitizing features in geojson.io](https://github.com/mapninja/Pixels2Points/blob/main/section04.md)
+* [Section 05 - Introducing geojson.io](https://github.com/mapninja/Pixels2Points/blob/main/section05.md)

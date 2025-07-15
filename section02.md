@@ -54,3 +54,9 @@ This is the basic workflow you'll use in the next steps — but instead of Stanf
 
 Up next: **Adding the Snow Map as a Raster Tile Layer** so you can digitize from the historical map directly.
 
+
+* [Introduction](https://github.com/mapninja/Pixels2Points/blob/main/readme.md)
+* [Section 02 - Introducing geojson.io](https://github.com/mapninja/Pixels2Points/blob/main/section02.md)
+* [Section 03 - Using XYZ Tiles in geojson.io](https://github.com/mapninja/Pixels2Points/blob/main/section03.md)
+* [Section 04 - Digitizing features in geojson.io](https://github.com/mapninja/Pixels2Points/blob/main/section04.md)
+* [Section 05 - Introducing geojson.io](https://github.com/mapninja/Pixels2Points/blob/main/section05.md)
