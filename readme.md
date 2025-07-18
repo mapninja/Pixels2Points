@@ -14,14 +14,6 @@ This process allows researchers, students, and digital humanists to transform st
 
 ![John Snow's 1854 Cholera Map - IIIF Image](https://iiif.archive.org/iiif/snow_map_modified/full/1140,/0/default.jpg)
 
-## What's this IIIF stuff?
-
-The **[International Image Interoperability Framework (IIIF)](https://iiif.io)** is a standard for delivering high-resolution images and metadata over the web. It was developed by libraries, archives, and museums to make digitized materials — like manuscripts, paintings, and maps — easier to share and interact with. IIIF is especially valuable for working with historical maps because it supports **deep zooming** into fine details, allows consistent access to image tiles without downloading massive files, and is widely used by institutions hosting large digital collections. Most importantly for this workshop, IIIF maps can be **georeferenced** using tools like [Allmaps](https://allmaps.org/), which enables us to align historic imagery with modern geographic space and extract meaningful spatial data from it.
-
-In this workshop, we’ve used a **IIIF manifest URL** , which is a special web link that points to structured information about a digitized image—in this case, John Snow’s 1854 cholera map. This manifest allows us to load the map into georeferencing tools like [Allmaps Editor](https://allmaps.org) and generate an **XYZ tile service** that we can bring into a number of different GIS applications.
-
-That's where this workshop picks up. We’ll use the georeferenced map in [geojson.io](https://geojson.io) as a backdrop to digitize spatial features and create a new dataset.
-
 ## Data We Will Use
 
 * **Archive.org Details Page for Snow Map**
@@ -45,16 +37,25 @@ That's where this workshop picks up. We’ll use the georeferenced map in [geojs
 
   This is the XYZ tile service URL that allows you to use the georeferenced map as a background layer in geojson.io or any other tool that supports raster tile services.
 
+
+What's this IIIF stuff?
+
+The **[International Image Interoperability Framework (IIIF)](https://iiif.io)** is a standard for delivering high-resolution images and metadata over the web. It was developed by libraries, archives, and museums to make digitized materials — like manuscripts, paintings, and maps — easier to share and interact with. IIIF is especially valuable for working with historical maps because it supports **deep zooming** into fine details, allows consistent access to image tiles without downloading massive files, and is widely used by institutions hosting large digital collections. Most importantly for this workshop, IIIF maps can be **georeferenced** using tools like [Allmaps](https://allmaps.org/), which enables us to align historic imagery with modern geographic space and extract meaningful spatial data from it.
+
+In this workshop, we’ve used a **IIIF manifest URL** , which is a special web link that points to structured information about a digitized image—in this case, John Snow’s 1854 cholera map. This manifest allows us to load the map into georeferencing tools like [Allmaps Editor](https://allmaps.org) and generate an **XYZ tile service** that we can bring into a number of different GIS applications.
+
+That's where this workshop picks up. We’ll use the georeferenced map in [geojson.io](https://geojson.io) as a backdrop to digitize spatial features and create a new dataset.
+
 ## Preparation Required
 
 Before the workshop, participants should have completed the two preceding instructor-led workshops in the Bootcamp Series, or at a minimum have familiarized themselves with the following:
 
-1. **Complete the IIIF Map Hosting Tutorial**
-   Follow the instructions at:
+1. **Complete the Archive.org IIIF Image Hosting Tutorial**
+   If you want to upload and serve your own map images using IIIF, you can follow the instructions at:
    `https://training.iiif.io/time_machine/day-two/image-servers/iiif-hosting-ia.html`
    This covers how to upload and publish a IIIF manifest using the Internet Archive.
 2. **Complete the Allmaps Georeferencing Tutorial**
-   Visit:
+   Once you have an image of a map at a IIIF endpoint, you can georeference it, and get an XYZ Tile URL using the following instructions:
    `https://allmaps.org/#getting-started/`
    Learn how to load a IIIF manifest and create a set of control points to georeference the map.
 
