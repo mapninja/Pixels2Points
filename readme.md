@@ -46,12 +46,14 @@ In this workshop, we’ve used a **IIIF manifest URL** , which is a special web 
 
 That's where this workshop picks up. We’ll use the georeferenced map in [geojson.io](https://geojson.io) as a backdrop to digitize spatial features and create a new dataset.
 
-## Preparation Required
+## Preparation Required for working with your own map images
 
-Before the workshop, participants should have completed the two preceding instructor-led workshops in the Bootcamp Series, or at a minimum have familiarized themselves with the following:
+To prepare for the scope of this workshop, we've already uploaded and georeferenced an image of John Snow's Map of the Cholera Outbreak of 1854.
+
+In order to use what you learn in this workhop with your own materials, you will need to have curated (or hosted) a set of maps with IIIF manifest URLs, and georeferenced that IIIF-served map (or maps) using editor.allmaps.org. You can find the steps for both of these tasks, here:
 
 1. **Complete the Archive.org IIIF Image Hosting Tutorial**
-   If you want to upload and serve your own map images using IIIF, you can follow the instructions at:
+   If you want to upload and serve your own map images to archive.org for using IIIF, you can follow the instructions at:
    `https://training.iiif.io/time_machine/day-two/image-servers/iiif-hosting-ia.html`
    This covers how to upload and publish a IIIF manifest using the Internet Archive.
 2. **Complete the Allmaps Georeferencing Tutorial**
