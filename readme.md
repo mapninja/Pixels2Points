@@ -38,7 +38,7 @@ This process allows researchers, students, and digital humanists to transform st
   This is the XYZ tile service URL that allows you to use the georeferenced map as a background layer in geojson.io or any other tool that supports raster tile services.
 
 
-What's this IIIF stuff?
+## What's this IIIF stuff?
 
 The **[International Image Interoperability Framework (IIIF)](https://iiif.io)** is a standard for delivering high-resolution images and metadata over the web. It was developed by libraries, archives, and museums to make digitized materials — like manuscripts, paintings, and maps — easier to share and interact with. IIIF is especially valuable for working with historical maps because it supports **deep zooming** into fine details, allows consistent access to image tiles without downloading massive files, and is widely used by institutions hosting large digital collections. Most importantly for this workshop, IIIF maps can be **georeferenced** using tools like [Allmaps](https://allmaps.org/), which enables us to align historic imagery with modern geographic space and extract meaningful spatial data from it.
 
