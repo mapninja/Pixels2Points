@@ -3,7 +3,7 @@
 <html lang="" >
     <head>
         <meta charset="UTF-8">
-        <title>Section 05 - Exporting a geojson file · HonKit</title>
+        <title>Section 07 - Making a webmap · HonKit</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="HonKit 6.0.3">
@@ -56,10 +56,8 @@
     <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="section06.html" />
     
-    
-    <link rel="prev" href="section04.html" />
+    <link rel="prev" href="section06.html" />
     
 
     </head>
@@ -140,7 +138,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.5" data-path="section05.html">
+        <li class="chapter " data-level="1.5" data-path="section05.html">
             
                 <a href="section05.html">
             
@@ -166,7 +164,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.7" data-path="section07.html">
+        <li class="chapter active" data-level="1.7" data-path="section07.html">
             
                 <a href="section07.html">
             
@@ -209,7 +207,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="." >Section 05 - Exporting a geojson file</a>
+        <a href="." >Section 07 - Making a webmap</a>
     </h1>
 </div>
 
@@ -224,60 +222,7 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="5-saving-your-digitized-water-pumps-data">5. Saving Your Digitized Water Pumps Data</h1>
-<p>Once you’ve digitized and labeled all of the water pumps from the Snow map, it’s time to <strong>save your work</strong> . geojson.io makes this easy by letting you export your spatial data in several common formats — perfect for use in GIS software, web maps, or data analysis.</p>
-<hr></hr>
-<h2 id="step-by-step-save-your-data">Step-by-Step: Save Your Data</h2>
-<ol>
-<li>In the upper-left corner of the screen, click the <strong>“Save”</strong> menu</li>
-<li>You’ll see a list of format options</li>
-</ol>
-<p><img src="images/20250715_124459_image.png" alt="Screenshot of the geojson.io Save menu open, showing export options including GeoJSON, TopoJSON, CSV, KML, WKT, and Shapefile."></img></p>
-<hr></hr>
-<h3 id="export-format-options">Export Format Options</h3>
-<p>Here’s what each format is and when you might use it:</p>
-<ul>
-<li><p><strong>GeoJSON</strong></p>
-<p>The default and most widely used format for web maps and simple GIS workflows. Use this if you plan to open the file in QGIS, Leaflet, or GitHub.</p>
-</li>
-<li><p><strong>TopoJSON</strong></p>
-<p>A compressed format that encodes shared boundaries efficiently. Great for complex maps on the web but less commonly supported in desktop GIS software.</p>
-</li>
-<li><p><strong>CSV</strong></p>
-<p>Exports feature data (including geometry) as a comma-separated table. Best for working in Excel, Google Sheets, or other data tools — though spatial data management is limited.</p>
-</li>
-<li><p><strong>KML</strong></p>
-<p>Use this format if you plan to view your features in <strong>Google Earth</strong> .</p>
-</li>
-<li><p><strong>WKT (Well-Known Text)</strong></p>
-<p>A text-based format for geometries. Useful in certain GIS databases and geospatial programming environments.</p>
-</li>
-<li><p><strong>Shapefile</strong></p>
-<p>A classic GIS format used in ArcGIS and QGIS. This option downloads a <code>.zip</code> archive containing all required components (<code>.shp</code>, <code>.shx</code>, <code>.dbf</code>, etc.).</p>
-</li>
-</ul>
-<hr></hr>
-<h3 id="recommended-format-for-this-workshop">Recommended Format for This Workshop</h3>
-<p>We recommend saving your work as <strong>GeoJSON</strong> for this exercise:</p>
-<ul>
-<li>It keeps both <strong>geometry</strong> (point locations) and <strong>properties</strong> (your <code>label</code> values)</li>
-<li>It’s easy to open in other tools like QGIS, Mapshaper, or GitHub</li>
-<li><p>It preserves coordinate precision and structure</p>
-</li>
-<li><p>Click <strong>GeoJSON</strong> , and a <code>.geojson</code> file will download to your computer.</p>
-</li>
-</ul>
-<p><img src="images/20250715_124838_image.png" alt=""></img></p>
-<p><strong>Pro tip:</strong> The file will be saved as something unhelpful, like <code>map.geojson</code> or <code>map(2).geojson</code>, so rename the file something like <code>snow_water_pumps.geojson</code> for clarity.</p>
-<hr></hr>
-<p>In the final section, we’ll explore how to <strong>visualize and share</strong> your data, and give you ideas for where to go next with your new skills. </p>
-<ul>
-<li><a href="https://github.com/mapninja/Pixels2Points/blob/main/readme.md" target="_blank">Introduction</a></li>
-<li><a href="https://github.com/mapninja/Pixels2Points/blob/main/section02.md" target="_blank">Section 02 - Introducing geojson.io</a></li>
-<li><a href="https://github.com/mapninja/Pixels2Points/blob/main/section03.md" target="_blank">Section 03 - Using XYZ Tiles in geojson.io</a></li>
-<li><a href="https://github.com/mapninja/Pixels2Points/blob/main/section04.md" target="_blank">Section 04 - Digitizing features in geojson.io</a></li>
-<li><a href="https://github.com/mapninja/Pixels2Points/blob/main/section05.md" target="_blank">Section 05 - Introducing geojson.io</a></li>
-</ul>
+                                <h1 id="section-07---making-a-webmap">Section 07 - Making a webmap</h1>
 
                                 
                                 </section>
@@ -305,14 +250,10 @@
 
             
                 
-                <a href="section04.html" class="navigation navigation-prev " aria-label="Previous page: Section 04 - Digitizing features in geojson.io">
+                <a href="section06.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: Section 06 - Using Github for visualizing and sharing the data">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
-                
-                <a href="section06.html" class="navigation navigation-next " aria-label="Next page: Section 06 - Using Github for visualizing and sharing the data">
-                    <i class="fa fa-angle-right"></i>
-                </a>
                 
             
         
@@ -321,7 +262,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Section 05 - Exporting a geojson file","level":"1.5","depth":1,"next":{"title":"Section 06 - Using Github for visualizing and sharing the data","level":"1.6","depth":1,"path":"section06.md","ref":"section06.md","articles":[]},"previous":{"title":"Section 04 - Digitizing features in geojson.io","level":"1.4","depth":1,"path":"section04.md","ref":"section04.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"section05.md","mtime":"2025-07-18T16:30:20.035Z","type":"markdown"},"gitbook":{"version":"6.0.3","time":"2025-07-18T16:51:31.990Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Section 07 - Making a webmap","level":"1.7","depth":1,"previous":{"title":"Section 06 - Using Github for visualizing and sharing the data","level":"1.6","depth":1,"path":"section06.md","ref":"section06.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"section07.md","mtime":"2025-07-18T16:51:03.618Z","type":"markdown"},"gitbook":{"version":"6.0.3","time":"2025-07-18T16:51:31.990Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>

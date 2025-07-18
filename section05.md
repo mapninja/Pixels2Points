@@ -54,7 +54,7 @@ We recommend saving your work as **GeoJSON** for this exercise:
 
 ---
 
-In the final section, we’ll explore how to **visualize and share** your data, and give you ideas for where to go next with your new skills. Let me know if you want a version of this section that includes instructions for re-uploading saved files back into geojson.io.
+In the final section, we’ll explore how to **visualize and share** your data, and give you ideas for where to go next with your new skills. 
 
 
 * [Introduction](https://github.com/mapninja/Pixels2Points/blob/main/readme.md)
