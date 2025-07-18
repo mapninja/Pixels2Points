@@ -47,10 +47,4 @@ You can update labels as you digitize (each new point gets an empty row in the T
 
 ---
 
-Once all thirteen (13) pumps are digitized and labeled, you can change the basemap to one of the choices at teh bottom of the map and view your first historical spatial dataset, in a modern spatial context! In the next section, we’ll learn how to **save and export** your data from geojson.io as a `.geojson` file.
-
-* [Introduction](https://github.com/mapninja/Pixels2Points/blob/main/readme.md)
-* [Section 02 - Introducing geojson.io](https://github.com/mapninja/Pixels2Points/blob/main/section02.md)
-* [Section 03 - Using XYZ Tiles in geojson.io](https://github.com/mapninja/Pixels2Points/blob/main/section03.md)
-* [Section 04 - Digitizing features in geojson.io](https://github.com/mapninja/Pixels2Points/blob/main/section04.md)
-* [Section 05 - Introducing geojson.io](https://github.com/mapninja/Pixels2Points/blob/main/section05.md)
+Once all *thirteen (13)* pumps are digitized and labeled, you can change the basemap to one of the choices at teh bottom of the map and view your first historical spatial dataset, in a modern spatial context! In the next section, we’ll learn how to **save and export** your data from geojson.io as a `.geojson` file.

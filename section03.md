@@ -76,10 +76,3 @@ While this isn’t ideal for aligning features visually, we’ll use what we can
 ---
 
 In the next section, we’ll begin **digitizing the pump points**, labeling each with its nearest street name using the “label” property we practiced earlier.
-
-
-* [Introduction](https://github.com/mapninja/Pixels2Points/blob/main/readme.md)
-* [Section 02 - Introducing geojson.io](https://github.com/mapninja/Pixels2Points/blob/main/section02.md)
-* [Section 03 - Using XYZ Tiles in geojson.io](https://github.com/mapninja/Pixels2Points/blob/main/section03.md)
-* [Section 04 - Digitizing features in geojson.io](https://github.com/mapninja/Pixels2Points/blob/main/section04.md)
-* [Section 05 - Introducing geojson.io](https://github.com/mapninja/Pixels2Points/blob/main/section05.md)

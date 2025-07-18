@@ -62,9 +62,3 @@ Before the workshop, participants should have completed the two preceding instru
 * **[Turf.js](https://turfjs.org/)**
   A JavaScript library for advanced geospatial analysis. Turf.js enables spatial operations such as measuring distances, buffering, and working with GeoJSON data directly in the browser.
 
-
-* [Introduction](https://github.com/mapninja/Pixels2Points/blob/main/readme.md)
-* [Section 02 - Introducing geojson.io](https://github.com/mapninja/Pixels2Points/blob/main/section02.md)
-* [Section 03 - Using XYZ Tiles in geojson.io](https://github.com/mapninja/Pixels2Points/blob/main/section03.md)
-* [Section 04 - Digitizing features in geojson.io](https://github.com/mapninja/Pixels2Points/blob/main/section04.md)
-* [Section 05 - Introducing geojson.io](https://github.com/mapninja/Pixels2Points/blob/main/section05.md)

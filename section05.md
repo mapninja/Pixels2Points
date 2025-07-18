@@ -56,9 +56,3 @@ We recommend saving your work as **GeoJSON** for this exercise:
 
 In the final section, we’ll explore how to **visualize and share** your data, and give you ideas for where to go next with your new skills. 
 
-
-* [Introduction](https://github.com/mapninja/Pixels2Points/blob/main/readme.md)
-* [Section 02 - Introducing geojson.io](https://github.com/mapninja/Pixels2Points/blob/main/section02.md)
-* [Section 03 - Using XYZ Tiles in geojson.io](https://github.com/mapninja/Pixels2Points/blob/main/section03.md)
-* [Section 04 - Digitizing features in geojson.io](https://github.com/mapninja/Pixels2Points/blob/main/section04.md)
-* [Section 05 - Introducing geojson.io](https://github.com/mapninja/Pixels2Points/blob/main/section05.md)
