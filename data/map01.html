@@ -31,9 +31,9 @@
         // Initialize the map
         const map = L.map('map').setView([51.513, -0.137], 17);
 
-        // Base tile layer (OpenStreetMap)
-        const osm = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-            attribution: '&copy; OpenStreetMap contributors'
+        // Base tile layer (CARTO Positron)
+        const osm = L.tileLayer('https://a.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png', {
+            attribution: '&copy; Map tiles by CartoDB, under CC BY 3.0. Data by OpenStreetMap, under ODbL'
         });
 
         // Custom Snow map tile layer
@@ -58,9 +58,9 @@
                 const pumpGeo = L.geoJSON(pumpData, {
                     pointToLayer: (feature, latlng) => {
                         return L.circleMarker(latlng, {
-                            radius: 6,
-                            color: '#000',
-                            fillColor: '#fff',
+                            radius: 10,
+                            color: 'white',
+                            fillColor: 'blue',
                             fillOpacity: 1,
                             weight: 2
                         }).bindPopup(`Pump: ${feature.properties.label}`);
@@ -74,9 +74,9 @@
 
                 L.geoJSON(voronoi, {
                     style: {
-                        color: '#0077cc',
-                        weight: 1,
-                        fillOpacity: 0.1
+                        color: 'red',
+                        weight: 2,
+                        fillOpacity: 0.01
                     }
                 }).addTo(voronoiLayer);
             });
@@ -87,9 +87,9 @@
             .then(deathData => {
                 const deathsGeo = L.geoJSON(deathData, {
                     pointToLayer: (feature, latlng) => {
-                        const deaths = feature.properties.deaths || 1;
+                        const deaths = feature.properties.Num_Cases || 1;
                         return L.circleMarker(latlng, {
-                            radius: Math.sqrt(deaths) * 2,
+                            radius: Math.sqrt(deaths) * 4,
                             fillColor: 'red',
                             color: 'darkred',
                             weight: 1,
@@ -131,7 +131,7 @@
 
         // Layer controls
         const baseMaps = {
-            "OpenStreetMap": osm,
+            "Positron": osm,
             "Snow Map (Historical)": snowMapTiles
         };
 
