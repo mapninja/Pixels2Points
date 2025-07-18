@@ -1,0 +1,389 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <title>Section 02 - Introducing geojson.io · HonKit</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="HonKit 6.0.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/@honkit/honkit-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/@honkit/honkit-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="section03.html" />
+    
+    
+    <link rel="prev" href="./" />
+    
+
+    </head>
+    <body>
+        
+<div class="book honkit-cloak">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Section 01 - Digitizing data from georeferenced historical maps
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2" data-path="section02.html">
+            
+                <a href="section02.html">
+            
+                    
+                    Section 02 - Introducing geojson.io
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="section03.html">
+            
+                <a href="section03.html">
+            
+                    
+                    Section 03 - Using XYZ Tiles in geojson.io
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="section04.html">
+            
+                <a href="section04.html">
+            
+                    
+                    Section 04 - Digitizing features in geojson.io
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="section05.html">
+            
+                <a href="section05.html">
+            
+                    
+                    Section 05 - Exporting a geojson file
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="section06.html">
+            
+                <a href="section06.html">
+            
+                    
+                    Section 06 - Using Github for visualizing and sharing the data
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="section07.html">
+            
+                <a href="section07.html">
+            
+                    
+                    Section 07 - Making a webmap
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            Published with HonKit
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >Section 02 - Introducing geojson.io</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="1-intro-to-geojsonio">1. Intro to geojson.io</h1>
+<p><a href="https://geojson.io/" target="_blank">geojson.io</a> is a free, browser-based tool for working with <strong>geospatial data</strong> — specifically, data in the <a href="https://geojson.org/" target="_blank">GeoJSON</a> format. GeoJSON is a text-based format that stores geographic features like points, lines, and polygons along with their properties, and it works across many modern mapping tools and platforms.</p>
+<h2 id="what-you-can-do-with-geojsonio">What You Can Do with geojson.io</h2>
+<ul>
+<li>Draw and edit <strong>points</strong>, <strong>lines</strong>, and <strong>polygons</strong> on a map</li>
+<li>View and edit the <strong>coordinates</strong> and <strong>properties</strong> of each feature</li>
+<li>Add <strong>basemaps</strong>, including custom raster tile layers</li>
+<li>Export your data as <code>.geojson</code>, <code>.kml</code>, <code>.csv</code>, or <code>.shapefile</code></li>
+<li>Copy or paste GeoJSON text to and from other tools</li>
+</ul>
+<p>This makes it a great choice for quickly digitizing spatial features — like the <strong>water pumps</strong> on John Snow’s cholera map — and exporting them into formats you can analyze or map later.</p>
+<h2 id="interface-overview">Interface Overview</h2>
+<p>When you first open the site, you’ll see a split screen:</p>
+<ul>
+<li><strong>Left side</strong>: A map view where you draw and edit features</li>
+<li><strong>Right side</strong>: A text editor showing the GeoJSON code of your features</li>
+</ul>
+<p><img src="images/20250715_112545_image.png" alt=""></img></p>
+<h2 id="creating-a-feature">Creating a Feature</h2>
+<p><img src="images/20250715_112443_image.png" alt="Screenshot showing the geojson.io toolbar with options for drawing point, line, and polygon features"></img></p>
+<ol>
+<li><strong>Click the button</strong> for the type of feature you want to add (point, line, or polygon) in the top toolbar.</li>
+<li><strong>Click on the map</strong> to place the feature, for example, a bounding box that contains Stanford University's campus.</li>
+</ol>
+<p>After you draw something, geojson.io automatically updates the GeoJSON code in the right-hand panel. This is what you can save and share.</p>
+<p><img src="images/20250715_112740_image.png" alt=""></img></p>
+<h2 id="2-adding-attributes-using-the-table-tab">2. Adding Attributes Using the <strong>Table</strong> Tab</h2>
+<p>Once you’ve added features to the map in geojson.io (like points for water pumps), you can add descriptive information — such as the name of the street each pump is located on. In GeoJSON, this descriptive data is stored as <strong>properties</strong> , and geojson.io gives you a simple way to edit those using the <strong>Table</strong> tab.</p>
+<ol>
+<li>Clicking the <strong>“Table”</strong> tab at the top right of the screen switches the view to a spreadsheet-like editor where each row represents a geographic feature, and each column represents an attribute.
+<img src="images/20250715_112819_image.png" alt="Screenshot of the Table tab in geojson.io showing a default &quot;new column&quot; ready to be renamed"></img>*</li>
+<li><p>Click the column header labeled <code>new column</code> and rename it to <code>label</code>.</p>
+<p><img src="images/20250715_113031_image.png" alt=""></img></p>
+<p>This will be used to store the street name or other identifying information for each pump.</p>
+</li>
+<li>Click in the cell under the <code>label</code> column and type a value, such as <code>Stanford University</code>, in this example.</li>
+<li><p>You can also click directly on a point in the map and use the <strong>Properties</strong> popup to add or edit the <code>label</code>.</p>
+<p><img src="images/20250715_114004_image.png" alt=""></img></p>
+</li>
+</ol>
+<hr></hr>
+<p>This is the basic workflow you'll use in the next steps — but instead of Stanford, we'll be adding <strong>water pumps from John Snow’s 1854 map</strong> , labeling each with its nearest street. The next section will show you how to bring in that historic map so you can start digitizing directly on top of it.</p>
+<p>Up next: <strong>Adding the Snow Map as a Raster Tile Layer</strong> so you can digitize from the historical map directly.</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="./" class="navigation navigation-prev " aria-label="Previous page: Section 01 - Digitizing data from georeferenced historical maps">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="section03.html" class="navigation navigation-next " aria-label="Next page: Section 03 - Using XYZ Tiles in geojson.io">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Section 02 - Introducing geojson.io","level":"1.2","depth":1,"next":{"title":"Section 03 - Using XYZ Tiles in geojson.io","level":"1.3","depth":1,"path":"section03.md","ref":"section03.md","articles":[]},"previous":{"title":"Section 01 - Digitizing data from georeferenced historical maps","level":"1.1","depth":1,"path":"readme.md","ref":"readme.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"section02.md","mtime":"2025-07-18T21:36:37.336Z","type":"markdown"},"gitbook":{"version":"6.0.3","time":"2025-07-18T21:36:50.960Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <noscript>
+        <style>
+            .honkit-cloak {
+                display: block !important;
+            }
+        </style>
+    </noscript>
+    <script>
+        // Restore sidebar state as critical path for prevent layout shift
+        function __init__getSidebarState(defaultValue){
+            var baseKey = "";
+            var key = baseKey + ":sidebar";
+            try {
+                var value = localStorage[key];
+                if (value === undefined) {
+                    return defaultValue;
+                }
+                var parsed = JSON.parse(value);
+                return parsed == null ? defaultValue : parsed;
+            } catch (e) {
+                return defaultValue;
+            }
+        }
+        function __init__restoreLastSidebarState() {
+            var isMobile = window.matchMedia("(max-width: 600px)").matches;
+            if (isMobile) {
+                // Init last state if not mobile
+                return;
+            }
+            var sidebarState = __init__getSidebarState(true);
+            var book = document.querySelector(".book");
+            // Show sidebar if it enabled
+            if (sidebarState && book) {
+                book.classList.add("without-animation", "with-summary");
+            }
+        }
+
+        try {
+            __init__restoreLastSidebarState();
+        } finally {
+            var book = document.querySelector(".book");
+            book.classList.remove("honkit-cloak");
+        }
+    </script>
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/@honkit/honkit-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
