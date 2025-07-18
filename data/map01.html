@@ -52,7 +52,7 @@
         const meanLayer = L.layerGroup();
 
         // Load pumps
-        fetch('./data/snow_map_pumps.geojson')
+        fetch('snow_map_pumps.geojson')
             .then(res => res.json())
             .then(pumpData => {
                 const pumpGeo = L.geoJSON(pumpData, {
@@ -82,7 +82,7 @@
             });
 
         // Load deaths
-        fetch('./data/snow_map_deaths.geojson')
+        fetch('snow_map_deaths.geojson')
             .then(res => res.json())
             .then(deathData => {
                 const deathsGeo = L.geoJSON(deathData, {
