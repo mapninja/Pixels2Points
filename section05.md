@@ -9,9 +9,9 @@ Once you’ve digitized and labeled all of the water pumps from the Snow map, it
 1. In the upper-left corner of the screen, click the **“Save”** menu
 2. You’ll see a list of format options
 
-![Screenshot of the geojson.io Save menu open, showing export options including GeoJSON, TopoJSON, CSV, KML, WKT, and Shapefile.](images/20250715_124459_image.png)
 
----
+
+![](images/20250718_154920_image.png)
 
 ### Export Format Options
 
@@ -48,11 +48,10 @@ We recommend saving your work as **GeoJSON** for this exercise:
 
 1. Click **GeoJSON** , and a `.geojson` file will download to your computer.
 
-![](images/20250715_124838_image.png)
+![](images/20250718_154944_image.png)
 
 **Pro tip:** The file will be saved as something unhelpful, like `map.geojson` or `map(2).geojson`, so rename the file something like `snow_water_pumps.geojson` for clarity.
 
 ---
 
-In the final section, we’ll explore how to **visualize and share** your data, and give you ideas for where to go next with your new skills. 
-
+In the final section, we’ll explore how to **visualize and share** your data, and give you ideas for where to go next with your new skills.

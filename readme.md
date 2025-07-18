@@ -1,5 +1,7 @@
 # Digitizing data from georeferenced historical maps on the web
 
+Published at: [https://mapninja.github.io/Pixels2Points/](https://mapninja.github.io/Pixels2Points/)
+
 # Introduction
 
 Here, you'll learn how to use a georeferenced historic map as a spatial data source by digitizing features from it using simple web-based tools. Our focus will be on Dr. John Snow’s iconic 1854 map of cholera outbreaks in London—a foundational example of spatial thinking in public health.
@@ -36,7 +38,6 @@ This process allows researchers, students, and digital humanists to transform st
   `https://allmaps.xyz/images/45bbc7ea6e45e5c9/{z}/{x}/{y}.png`
 
   This is the XYZ tile service URL that allows you to use the georeferenced map as a background layer in geojson.io or any other tool that supports raster tile services.
-
 
 ## What's this IIIF stuff?
 

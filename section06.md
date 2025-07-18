@@ -9,19 +9,17 @@ You’ll also learn how to get a **direct raw file URL**, which you can use to l
 ### Step-by-Step: Uploading to a GitHub Repository
 
 1. **Log in to GitHub** (or create a free account if you don’t have one)
-
 2. Click the **+ icon** in the upper right corner and choose **"New repository"**
 
-3. Name the repository:
+
+![](images/20250718_155234_image.png)
+
+1. Name the repository:
    `snow_data`
-
-4. Add an optional description, then click **“Create repository”**
-
-5. On the new repo page, click **“Add file” → “Upload files”**
-
-6. Drag and drop your `snow_water_pumps.geojson` file into the upload area
-
-7. Scroll down and click **“Commit changes”**
+5. Add an optional description, then click **“Create repository”**
+6. On the new repo page, click **“Add file” → “Upload files”**
+7. Drag and drop your `snow_water_pumps.geojson` file into the upload area
+8. Scroll down and click **“Commit changes”**
 
 <br>
 
@@ -52,9 +50,7 @@ This preview allows you to zoom in and explore the points you digitized — a gr
 If you want to use your GeoJSON file in another web mapping tool, you need the **raw URL**.
 
 1. In the GitHub repo, click on your file name (`snow_water_pumps.geojson`)
-
 2. Click the **“Raw”** button (near the top right)
-
 3. Copy the **URL from your browser’s address bar** — it will look something like:
 
 ```plaintext
@@ -65,4 +61,4 @@ This is the direct link to the GeoJSON file itself — and it can be used in too
 
 ---
 
-In the final section, we'll create a simple web map, using the data we have created, and serve it from Github, as well. 
+In the final section, we'll create a simple web map, using the data we have created, and serve it from Github, as well.
