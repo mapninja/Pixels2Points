@@ -233,10 +233,6 @@
 </ol>
 <p>This process allows researchers, students, and digital humanists to transform static visual information from historic maps into spatial data that can be analyzed, shared, and layered with modern geographic information.</p>
 <p><img src="https://iiif.archive.org/iiif/snow_map_modified/full/1140,/0/default.jpg" alt="John Snow's 1854 Cholera Map - IIIF Image"></img></p>
-<h2 id="whats-this-iiif-stuff">What's this IIIF stuff?</h2>
-<p>The <strong><a href="https://iiif.io" target="_blank">International Image Interoperability Framework (IIIF)</a></strong> is a standard for delivering high-resolution images and metadata over the web. It was developed by libraries, archives, and museums to make digitized materials — like manuscripts, paintings, and maps — easier to share and interact with. IIIF is especially valuable for working with historical maps because it supports <strong>deep zooming</strong> into fine details, allows consistent access to image tiles without downloading massive files, and is widely used by institutions hosting large digital collections. Most importantly for this workshop, IIIF maps can be <strong>georeferenced</strong> using tools like <a href="https://allmaps.org/" target="_blank">Allmaps</a>, which enables us to align historic imagery with modern geographic space and extract meaningful spatial data from it.</p>
-<p>In this workshop, we’ve used a <strong>IIIF manifest URL</strong> , which is a special web link that points to structured information about a digitized image—in this case, John Snow’s 1854 cholera map. This manifest allows us to load the map into georeferencing tools like <a href="https://allmaps.org" target="_blank">Allmaps Editor</a> and generate an <strong>XYZ tile service</strong> that we can bring into a number of different GIS applications.</p>
-<p>That's where this workshop picks up. We’ll use the georeferenced map in <a href="https://geojson.io" target="_blank">geojson.io</a> as a backdrop to digitize spatial features and create a new dataset.</p>
 <h2 id="data-we-will-use">Data We Will Use</h2>
 <ul>
 <li><p><strong>Archive.org Details Page for Snow Map</strong></p>
@@ -256,15 +252,19 @@
 <p>This is the XYZ tile service URL that allows you to use the georeferenced map as a background layer in geojson.io or any other tool that supports raster tile services.</p>
 </li>
 </ul>
+<p>What's this IIIF stuff?</p>
+<p>The <strong><a href="https://iiif.io" target="_blank">International Image Interoperability Framework (IIIF)</a></strong> is a standard for delivering high-resolution images and metadata over the web. It was developed by libraries, archives, and museums to make digitized materials — like manuscripts, paintings, and maps — easier to share and interact with. IIIF is especially valuable for working with historical maps because it supports <strong>deep zooming</strong> into fine details, allows consistent access to image tiles without downloading massive files, and is widely used by institutions hosting large digital collections. Most importantly for this workshop, IIIF maps can be <strong>georeferenced</strong> using tools like <a href="https://allmaps.org/" target="_blank">Allmaps</a>, which enables us to align historic imagery with modern geographic space and extract meaningful spatial data from it.</p>
+<p>In this workshop, we’ve used a <strong>IIIF manifest URL</strong> , which is a special web link that points to structured information about a digitized image—in this case, John Snow’s 1854 cholera map. This manifest allows us to load the map into georeferencing tools like <a href="https://allmaps.org" target="_blank">Allmaps Editor</a> and generate an <strong>XYZ tile service</strong> that we can bring into a number of different GIS applications.</p>
+<p>That's where this workshop picks up. We’ll use the georeferenced map in <a href="https://geojson.io" target="_blank">geojson.io</a> as a backdrop to digitize spatial features and create a new dataset.</p>
 <h2 id="preparation-required">Preparation Required</h2>
 <p>Before the workshop, participants should have completed the two preceding instructor-led workshops in the Bootcamp Series, or at a minimum have familiarized themselves with the following:</p>
 <ol>
-<li><strong>Complete the IIIF Map Hosting Tutorial</strong>
-Follow the instructions at:
+<li><strong>Complete the Archive.org IIIF Image Hosting Tutorial</strong>
+If you want to upload and serve your own map images using IIIF, you can follow the instructions at:
 <code>https://training.iiif.io/time_machine/day-two/image-servers/iiif-hosting-ia.html</code>
 This covers how to upload and publish a IIIF manifest using the Internet Archive.</li>
 <li><strong>Complete the Allmaps Georeferencing Tutorial</strong>
-Visit:
+Once you have an image of a map at a IIIF endpoint, you can georeference it, and get an XYZ Tile URL using the following instructions:
 <code>https://allmaps.org/#getting-started/</code>
 Learn how to load a IIIF manifest and create a set of control points to georeference the map.</li>
 </ol>
@@ -327,7 +327,7 @@ A JavaScript library for advanced geospatial analysis. Turf.js enables spatial o
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Section 01 - Digitizing data from georeferenced historical maps","level":"1.1","depth":1,"next":{"title":"Section 02 - Introducing geojson.io","level":"1.2","depth":1,"path":"section02.md","ref":"section02.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"readme.md","mtime":"2025-07-18T20:27:10.282Z","type":"markdown"},"gitbook":{"version":"6.0.3","time":"2025-07-18T20:27:14.636Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Section 01 - Digitizing data from georeferenced historical maps","level":"1.1","depth":1,"next":{"title":"Section 02 - Introducing geojson.io","level":"1.2","depth":1,"path":"section02.md","ref":"section02.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"readme.md","mtime":"2025-07-18T20:31:25.365Z","type":"markdown"},"gitbook":{"version":"6.0.3","time":"2025-07-18T20:31:40.077Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
