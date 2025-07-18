@@ -11,22 +11,25 @@ You’ll also learn how to get a **direct raw file URL**, which you can use to l
 1. **Log in to GitHub** (or create a free account if you don’t have one)
 2. Click the **+ icon** in the upper right corner and choose **"New repository"**
 
-
 ![](images/20250718_155234_image.png)
 
 1. Name the repository:
    `snow_data`
-5. Add an optional description, then click **“Create repository”**
-6. On the new repo page, click **“Add file” → “Upload files”**
-7. Drag and drop your `snow_water_pumps.geojson` file into the upload area
-8. Scroll down and click **“Commit changes”**
+2. Check the option to Add a README file
+
+![](images/20250718_161702_image.png)
+
+1. Add an optional description, then click **“Create repository”**
+2. On the new repo page, click **“Add file” → “Upload files”**
+
+![](images/20250718_161908_image.png)
+
+1. Drag and drop your `snow_water_pumps.geojson` file into the upload area
+5. Scroll down and click **“Commit changes”**
 
 <br>
 
-![Screenshot of GitHub file upload interface with geojson file ready to commit](https://user-images.githubusercontent.com/github-upload-geojson/upload-geojson.png)
-*Alt text: Screenshot of GitHub’s file upload page with a GeoJSON file dragged into the drop area and the “Commit changes” button below.*
-
-<br>
+![Alt text: Screenshot of GitHub’s file upload page with a GeoJSON file dragged into the drop area and the “Commit changes” button below.](images/20250718_162229_image.png)
 
 ---
 
@@ -34,12 +37,7 @@ You’ll also learn how to get a **direct raw file URL**, which you can use to l
 
 Once the file is uploaded, GitHub will automatically detect that it's a GeoJSON file and show a **preview map** at the bottom of the file view page.
 
-<br>
-
-![Screenshot of GitHub rendering a GeoJSON file as a map](https://user-images.githubusercontent.com/github-upload-geojson/rendered-map.png)
-*Alt text: Screenshot of GitHub’s auto-rendered map for a GeoJSON file, showing the file above and a live map preview below.*
-
-<br>
+![Alt text: Screenshot of GitHub’s auto-rendered map for a GeoJSON file, showing the file above and a live map preview below.](images/20250718_162404_image.png)
 
 This preview allows you to zoom in and explore the points you digitized — a great way to check your work or share it with others.
 
@@ -51,7 +49,10 @@ If you want to use your GeoJSON file in another web mapping tool, you need the *
 
 1. In the GitHub repo, click on your file name (`snow_water_pumps.geojson`)
 2. Click the **“Raw”** button (near the top right)
-3. Copy the **URL from your browser’s address bar** — it will look something like:
+
+![](images/20250718_162459_image.png)
+
+1. Copy the **URL from your browser’s address bar** — it will look something like:
 
 ```plaintext
 https://raw.githubusercontent.com/your-username/snow_data/main/snow_water_pumps.geojson
