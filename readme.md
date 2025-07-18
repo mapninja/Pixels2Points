@@ -2,9 +2,25 @@
 
 # Introduction
 
-In this workshop, you'll learn how to use a georeferenced historic map as a spatial data source by digitizing features from it using simple web-based tools. Our focus will be on Dr. John Snow’s iconic 1854 map of cholera outbreaks in London—a foundational example of spatial thinking in public health. By the end of the session, you’ll understand how to load a historic map as a raster tile layer, identify spatial features (in this case, water pumps), and digitize those features into a GeoJSON file. This process allows researchers, students, and digital humanists to transform static visual information from historic maps into spatial data that can be analyzed, shared, and layered with modern geographic information.
+Here, you'll learn how to use a georeferenced historic map as a spatial data source by digitizing features from it using simple web-based tools. Our focus will be on Dr. John Snow’s iconic 1854 map of cholera outbreaks in London—a foundational example of spatial thinking in public health.
+
+By the end of the session, you’ll understand how to:
+
+1. Load a historic map as a raster tile layer,
+2. Identify spatial features (in this case, water pumps),
+3. Digitize those features into a GeoJSON file.
+
+This process allows researchers, students, and digital humanists to transform static visual information from historic maps into spatial data that can be analyzed, shared, and layered with modern geographic information.
 
 ![John Snow's 1854 Cholera Map - IIIF Image](https://iiif.archive.org/iiif/snow_map_modified/full/1140,/0/default.jpg)
+
+## What's this IIIF stuff?
+
+The **[International Image Interoperability Framework (IIIF)](https://iiif.io)** is a standard for delivering high-resolution images and metadata over the web. It was developed by libraries, archives, and museums to make digitized materials — like manuscripts, paintings, and maps — easier to share and interact with. IIIF is especially valuable for working with historical maps because it supports **deep zooming** into fine details, allows consistent access to image tiles without downloading massive files, and is widely used by institutions hosting large digital collections. Most importantly for this workshop, IIIF maps can be **georeferenced** using tools like [Allmaps](https://allmaps.org/), which enables us to align historic imagery with modern geographic space and extract meaningful spatial data from it.
+
+In this workshop, we’ve used a **IIIF manifest URL** , which is a special web link that points to structured information about a digitized image—in this case, John Snow’s 1854 cholera map. This manifest allows us to load the map into georeferencing tools like [Allmaps Editor](https://allmaps.org) and generate an **XYZ tile service** that we can bring into a number of different GIS applications.
+
+That's where this workshop picks up. We’ll use the georeferenced map in [geojson.io](https://geojson.io) as a backdrop to digitize spatial features and create a new dataset.
 
 ## Data We Will Use
 
@@ -17,7 +33,7 @@ In this workshop, you'll learn how to use a georeferenced historic map as a spat
 
   `https://iiif.archive.org/iiif/snow_map_modified/info.json`
 
-  This URL points to the IIIF manifest for the map, which makes it accessible to IIIF-compatible viewers and georeferencing tools. You can learn how to [craft a IIIF manifest URL, here](https://training.iiif.io/time_machine/day-two/image-servers/iiif-hosting-ia.html).
+  This URL points to the IIIF manifest for the map, which makes it accessible to IIIF-compatible viewers and georeferencing tools. You can learn how to [craft a IIIF manifest URL for Internet Archive images, here](https://training.iiif.io/time_machine/day-two/image-servers/iiif-hosting-ia.html).
 * **Georeferenced Version (Allmaps)**
 
   `https://editor.allmaps.org/results?url=https%3A%2F%2Fiiif.archive.org%2Fiiif%2Fsnow_map_modified%2Finfo.json&image=https%3A%2F%2Fiiif.archive.org%2Fimage%2Fiiif%2F2%2Fsnow_map_modified%252fsnow_map_modified.tif`
@@ -45,6 +61,7 @@ Before the workshop, participants should have completed the two preceding instru
 ---
 
 ## Tools and Website Infrastructure We Will Use
+
 * **[geojson.io](https://geojson.io/)**
   A simple, browser-based web application for editing and visualizing GeoJSON files. We'll use the **“Add raster tile layer”** feature to bring in the John Snow map and digitize water pump locations with their associated street labels.
 * **[Allmaps Editor](https://editor.allmaps.org/)**
@@ -61,4 +78,3 @@ Before the workshop, participants should have completed the two preceding instru
   An open-source JavaScript library for interactive maps. Leaflet.js is widely used for displaying geospatial data and custom map layers in web applications.
 * **[Turf.js](https://turfjs.org/)**
   A JavaScript library for advanced geospatial analysis. Turf.js enables spatial operations such as measuring distances, buffering, and working with GeoJSON data directly in the browser.
-
