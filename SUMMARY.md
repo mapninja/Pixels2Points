@@ -1,6 +1,6 @@
 # Summary
 
-* [Introduction](readme.md)
+* [Section 01 - Digitizing data from georeferenced historical maps](readme.md)
 * [Section 02 - Introducing geojson.io](section02.md)
 * [Section 03 - Using XYZ Tiles in geojson.io](section03.md)
 * [Section 04 - Digitizing features in geojson.io](section04.md)

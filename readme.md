@@ -1,3 +1,5 @@
+# Digitizing data from georeferenced historical maps on the web
+
 # Introduction
 
 In this workshop, you'll learn how to use a georeferenced historic map as a spatial data source by digitizing features from it using simple web-based tools. Our focus will be on Dr. John Snow’s iconic 1854 map of cholera outbreaks in London—a foundational example of spatial thinking in public health. By the end of the session, you’ll understand how to load a historic map as a raster tile layer, identify spatial features (in this case, water pumps), and digitize those features into a GeoJSON file. This process allows researchers, students, and digital humanists to transform static visual information from historic maps into spatial data that can be analyzed, shared, and layered with modern geographic information.
@@ -29,7 +31,7 @@ In this workshop, you'll learn how to use a georeferenced historic map as a spat
 
 ## Preparation Required
 
-Before the workshop, participants should:
+Before the workshop, participants should have completed the two preceding instructor-led workshops in the Bootcamp Series, or at a minimum have familiarized themselves with the following:
 
 1. **Complete the IIIF Map Hosting Tutorial**
    Follow the instructions at:
@@ -43,7 +45,6 @@ Before the workshop, participants should:
 ---
 
 ## Tools and Website Infrastructure We Will Use
-
 * **[geojson.io](https://geojson.io/)**
   A simple, browser-based web application for editing and visualizing GeoJSON files. We'll use the **“Add raster tile layer”** feature to bring in the John Snow map and digitize water pump locations with their associated street labels.
 * **[Allmaps Editor](https://editor.allmaps.org/)**
@@ -53,8 +54,13 @@ Before the workshop, participants should:
 * **[Archive.org](https://archive.org/)**
   A public digital library where we upload and host the IIIF version of the historic map. It provides permanent URLs and integrates with the Allmaps georeferencing tools.
 * **[IIIF Hosting Instructions (Training Site)](https://training.iiif.io/time_machine/day-two/image-servers/iiif-hosting-ia.html)**
-  This instructional guide walks you through the steps of uploading a historic map image to Archive.org and generating a IIIF manifest, a key step in making your map usable in geospatial workflows.  
-  
+  This instructional guide walks you through the steps of uploading a historic map image to Archive.org and generating a IIIF manifest, a key step in making your map usable in geospatial workflows.
+* **[GitHub](https://github.com/)**
+  A platform for hosting, sharing, and collaborating on code and documentation. Workshop materials and example datasets are provided via GitHub repositories.
+* **[Leaflet.js](https://leafletjs.com/)**
+  An open-source JavaScript library for interactive maps. Leaflet.js is widely used for displaying geospatial data and custom map layers in web applications.
+* **[Turf.js](https://turfjs.org/)**
+  A JavaScript library for advanced geospatial analysis. Turf.js enables spatial operations such as measuring distances, buffering, and working with GeoJSON data directly in the browser.
 
 
 * [Introduction](https://github.com/mapninja/Pixels2Points/blob/main/readme.md)
