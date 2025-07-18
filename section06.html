@@ -230,21 +230,17 @@
 <hr></hr>
 <h3 id="step-by-step-uploading-to-a-github-repository">Step-by-Step: Uploading to a GitHub Repository</h3>
 <ol>
-<li><p><strong>Log in to GitHub</strong> (or create a free account if you don’t have one)</p>
-</li>
-<li><p>Click the <strong>+ icon</strong> in the upper right corner and choose <strong>"New repository"</strong></p>
-</li>
-<li><p>Name the repository:
-<code>snow_data</code></p>
-</li>
-<li><p>Add an optional description, then click <strong>“Create repository”</strong></p>
-</li>
-<li><p>On the new repo page, click <strong>“Add file” → “Upload files”</strong></p>
-</li>
-<li><p>Drag and drop your <code>snow_water_pumps.geojson</code> file into the upload area</p>
-</li>
-<li><p>Scroll down and click <strong>“Commit changes”</strong></p>
-</li>
+<li><strong>Log in to GitHub</strong> (or create a free account if you don’t have one)</li>
+<li>Click the <strong>+ icon</strong> in the upper right corner and choose <strong>"New repository"</strong></li>
+</ol>
+<p><img src="images/20250718_155234_image.png" alt=""></img></p>
+<ol>
+<li>Name the repository:
+<code>snow_data</code></li>
+<li>Add an optional description, then click <strong>“Create repository”</strong></li>
+<li>On the new repo page, click <strong>“Add file” → “Upload files”</strong></li>
+<li>Drag and drop your <code>snow_water_pumps.geojson</code> file into the upload area</li>
+<li>Scroll down and click <strong>“Commit changes”</strong></li>
 </ol>
 <p><br></br></p>
 <p><img src="https://user-images.githubusercontent.com/github-upload-geojson/upload-geojson.png" alt="Screenshot of GitHub file upload interface with geojson file ready to commit"></img>
@@ -262,18 +258,15 @@
 <h3 id="getting-the-raw-file-url-for-web-maps">Getting the Raw File URL for Web Maps</h3>
 <p>If you want to use your GeoJSON file in another web mapping tool, you need the <strong>raw URL</strong>.</p>
 <ol>
-<li><p>In the GitHub repo, click on your file name (<code>snow_water_pumps.geojson</code>)</p>
-</li>
-<li><p>Click the <strong>“Raw”</strong> button (near the top right)</p>
-</li>
-<li><p>Copy the <strong>URL from your browser’s address bar</strong> — it will look something like:</p>
-</li>
+<li>In the GitHub repo, click on your file name (<code>snow_water_pumps.geojson</code>)</li>
+<li>Click the <strong>“Raw”</strong> button (near the top right)</li>
+<li>Copy the <strong>URL from your browser’s address bar</strong> — it will look something like:</li>
 </ol>
 <pre><code class="lang-plaintext">https://raw.githubusercontent.com/your-username/snow_data/main/snow_water_pumps.geojson
 </code></pre>
 <p>This is the direct link to the GeoJSON file itself — and it can be used in tools that accept remote URLs, like <a href="https://geojson.io" target="_blank">geojson.io</a>, <a href="https://leafletjs.com" target="_blank">Leaflet.js</a>, or even <a href="https://mapshaper.org/" target="_blank">Mapshaper</a>.</p>
 <hr></hr>
-<p>In the final section, we'll create a simple web map, using the data we have created, and serve it from Github, as well. </p>
+<p>In the final section, we'll create a simple web map, using the data we have created, and serve it from Github, as well.</p>
 
                                 
                                 </section>
@@ -317,7 +310,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Section 06 - Using Github for visualizing and sharing the data","level":"1.6","depth":1,"next":{"title":"Section 07 - Making a webmap","level":"1.7","depth":1,"path":"section07.md","ref":"section07.md","articles":[]},"previous":{"title":"Section 05 - Exporting a geojson file","level":"1.5","depth":1,"path":"section05.md","ref":"section05.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"section06.md","mtime":"2025-07-18T21:36:37.337Z","type":"markdown"},"gitbook":{"version":"6.0.3","time":"2025-07-18T21:36:50.960Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Section 06 - Using Github for visualizing and sharing the data","level":"1.6","depth":1,"next":{"title":"Section 07 - Making a webmap","level":"1.7","depth":1,"path":"section07.md","ref":"section07.md","articles":[]},"previous":{"title":"Section 05 - Exporting a geojson file","level":"1.5","depth":1,"path":"section05.md","ref":"section05.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"section06.md","mtime":"2025-07-18T22:55:10.488Z","type":"markdown"},"gitbook":{"version":"6.0.3","time":"2025-07-18T22:55:21.278Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
