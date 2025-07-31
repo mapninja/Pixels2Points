@@ -2,15 +2,17 @@
 
 Published at: [https://mapninja.github.io/Pixels2Points/](https://mapninja.github.io/Pixels2Points/)
 
+Accompanying Slides: [https://slides.com/staceymaples/digitizingbootcamp](https://slides.com/staceymaples/digitizingbootcamp)
+
 # Introduction
 
 Here, you'll learn how to use a georeferenced historic map as a spatial data source by digitizing features from it using simple web-based tools. Our focus will be on Dr. John Snow’s iconic 1854 map of cholera outbreaks in London—a foundational example of spatial thinking in public health.
 
 By the end of the session, you’ll understand how to:
 
-1. Load a historic map as a raster tile layer,
+1. Load an historic map as a raster tile layer in geojson.io,
 2. Identify spatial features (in this case, water pumps),
-3. Digitize those features into a GeoJSON file.
+3. Digitize those features into a GeoJSON file, with properties.
 
 This process allows researchers, students, and digital humanists to transform static visual information from historic maps into spatial data that can be analyzed, shared, and layered with modern geographic information.
 
@@ -47,7 +49,7 @@ In this workshop, we’ve used a **IIIF manifest URL** , which is a special web 
 
 That's where this workshop picks up. We’ll use the georeferenced map in [geojson.io](https://geojson.io) as a backdrop to digitize spatial features and create a new dataset.
 
-## Preparation Required for working with your own map images
+## Preparation required for working with your own map images
 
 To prepare for the scope of this workshop, we've already uploaded and georeferenced an image of John Snow's Map of the Cholera Outbreak of 1854.
 
@@ -55,11 +57,11 @@ In order to use what you learn in this workhop with your own materials, you will
 
 1. **Complete the Archive.org IIIF Image Hosting Tutorial**
    If you want to upload and serve your own map images to archive.org for using IIIF, you can follow the instructions at:
-   `https://training.iiif.io/time_machine/day-two/image-servers/iiif-hosting-ia.html`
+   [https://training.iiif.io/time_machine/day-two/image-servers/iiif-hosting-ia.html](https://training.iiif.io/time_machine/day-two/image-servers/iiif-hosting-ia.html)
    This covers how to upload and publish a IIIF manifest using the Internet Archive.
 2. **Complete the Allmaps Georeferencing Tutorial**
    Once you have an image of a map at a IIIF endpoint, you can georeference it, and get an XYZ Tile URL using the following instructions:
-   `https://allmaps.org/#getting-started/`
+   [https://allmaps.org/#getting-started/](https://allmaps.org/#getting-started/)
    Learn how to load a IIIF manifest and create a set of control points to georeference the map.
 
 ---
