@@ -4,7 +4,7 @@ Published at: [https://mapninja.github.io/Pixels2Points/](https://mapninja.githu
 
 Accompanying Slides: [https://slides.com/staceymaples/digitizingbootcamp](https://slides.com/staceymaples/digitizingbootcamp)
 
-# Introduction
+# Introduction 
 
 Here, you'll learn how to use a georeferenced historic map as a spatial data source by digitizing features from it using simple web-based tools. Our focus will be on Dr. John Snow’s iconic 1854 map of cholera outbreaks in London—a foundational example of spatial thinking in public health.
 
