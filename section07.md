@@ -1,4 +1,4 @@
-## 7. Making a Web Map (Draft UNDER CONSTRUCTION)
+## 7. Making a Web Map (Draft UNDER CONSTRUCTION, probably broken)
 
 This section shows you how to build an interactive web map using:
 
