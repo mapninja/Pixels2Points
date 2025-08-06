@@ -4,7 +4,7 @@ Published at: [https://mapninja.github.io/Pixels2Points/](https://mapninja.githu
 
 Accompanying Slides: [https://slides.com/staceymaples/digitizingbootcamp](https://slides.com/staceymaples/digitizingbootcamp)
 
-# Introduction 
+# Introduction
 
 Here, you'll learn how to use a georeferenced historic map as a spatial data source by digitizing features from it using simple web-based tools. Our focus will be on Dr. John Snow’s iconic 1854 map of cholera outbreaks in London—a foundational example of spatial thinking in public health.
 
@@ -43,9 +43,12 @@ This process allows researchers, students, and digital humanists to transform st
 
 ## What's this IIIF stuff?
 
+
 The **[International Image Interoperability Framework (IIIF)](https://iiif.io)** is a standard for delivering high-resolution images and metadata over the web. It was developed by libraries, archives, and museums to make digitized materials — like manuscripts, paintings, and maps — easier to share and interact with. IIIF is especially valuable for working with historical maps because it supports **deep zooming** into fine details, allows consistent access to image tiles without downloading massive files, and is widely used by institutions hosting large digital collections. Most importantly for this workshop, IIIF maps can be **georeferenced** using tools like [Allmaps](https://allmaps.org/), which enables us to align historic imagery with modern geographic space and extract meaningful spatial data from it.
 
-In this workshop, we’ve used a **IIIF manifest URL** , which is a special web link that points to structured information about a digitized image—in this case, John Snow’s 1854 cholera map. This manifest allows us to load the map into georeferencing tools like [Allmaps Editor](https://allmaps.org) and generate an **XYZ tile service** that we can bring into a number of different GIS applications.
+![Image API filler](https://iiif.io/api/image/1.0/images/iiif-order.png)
+
+In this workshop, we’ve used a **IIIF manifest URL** , which is a special web link that points to structured information (metadata) about a digitized image — in this case, John Snow’s 1854 cholera map. This manifest allows us to load the map into georeferencing tools like [Allmaps Editor](https://allmaps.org) and generate an **XYZ tile service** that we can bring into a number of different GIS applications.
 
 That's where this workshop picks up. We’ll use the georeferenced map in [geojson.io](https://geojson.io) as a backdrop to digitize spatial features and create a new dataset.
 
@@ -75,11 +78,11 @@ In order to use what you learn in this workhop with your own materials, you will
 * **[Allmaps Tile Server](https://allmaps.xyz/)**
   This generates an XYZ tile service from your georeferenced map, allowing the map to be used as a basemap in tools like geojson.io.
 * **[Archive.org](https://archive.org/)**
-  A public digital library where we upload and host the IIIF version of the historic map. It provides permanent URLs and integrates with the Allmaps georeferencing tools.
+  A public digital library where we upload and host the IIIF version of the historic map. It provides permanent URLs and integrates with the Allmaps georeferencing tools. You can upload your own scanned map images to [archive.org](https://archive.org) and get IIIF services on the images.
 * **[IIIF Hosting Instructions (Training Site)](https://training.iiif.io/time_machine/day-two/image-servers/iiif-hosting-ia.html)**
   This instructional guide walks you through the steps of uploading a historic map image to Archive.org and generating a IIIF manifest, a key step in making your map usable in geospatial workflows.
 * **[GitHub](https://github.com/)**
-  A platform for hosting, sharing, and collaborating on code and documentation. Workshop materials and example datasets are provided via GitHub repositories.
+  A platform for hosting, sharing, and collaborating on code and documentation. Workshop materials and example datasets are provided via GitHub repositories. GitHub also "renders" geojson as a map, whenever you deposit it in a repo, making it a great way to share your data.
 * **[Leaflet.js](https://leafletjs.com/)**
   An open-source JavaScript library for interactive maps. Leaflet.js is widely used for displaying geospatial data and custom map layers in web applications.
 * **[Turf.js](https://turfjs.org/)**
