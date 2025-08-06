@@ -43,7 +43,6 @@ This process allows researchers, students, and digital humanists to transform st
 
 ## What's this IIIF stuff?
 
-
 The **[International Image Interoperability Framework (IIIF)](https://iiif.io)** is a standard for delivering high-resolution images and metadata over the web. It was developed by libraries, archives, and museums to make digitized materials — like manuscripts, paintings, and maps — easier to share and interact with. IIIF is especially valuable for working with historical maps because it supports **deep zooming** into fine details, allows consistent access to image tiles without downloading massive files, and is widely used by institutions hosting large digital collections. Most importantly for this workshop, IIIF maps can be **georeferenced** using tools like [Allmaps](https://allmaps.org/), which enables us to align historic imagery with modern geographic space and extract meaningful spatial data from it.
 
 ![Image API filler](https://iiif.io/api/image/1.0/images/iiif-order.png)
@@ -79,6 +78,7 @@ In order to use what you learn in this workhop with your own materials, you will
   This generates an XYZ tile service from your georeferenced map, allowing the map to be used as a basemap in tools like geojson.io.
 * **[Archive.org](https://archive.org/)**
   A public digital library where we upload and host the IIIF version of the historic map. It provides permanent URLs and integrates with the Allmaps georeferencing tools. You can upload your own scanned map images to [archive.org](https://archive.org) and get IIIF services on the images.
+* [IIIF.io](https://IIIF.io)
 * **[IIIF Hosting Instructions (Training Site)](https://training.iiif.io/time_machine/day-two/image-servers/iiif-hosting-ia.html)**
   This instructional guide walks you through the steps of uploading a historic map image to Archive.org and generating a IIIF manifest, a key step in making your map usable in geospatial workflows.
 * **[GitHub](https://github.com/)**
